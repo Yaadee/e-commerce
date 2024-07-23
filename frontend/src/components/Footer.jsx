@@ -1,21 +1,20 @@
-import React from 'react'
-import {Container, Row,Col} from 'react-bootstrap'
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+
 const Footer = () => {
-    const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
-    <Footer>
-        <Container>
-            <Row>
-                <Col className="text-center py-3">
-                <p>Etshop &copy; {currentYear}</p>
-                </Col> 
-            </Row>
-        </Container>
+    <footer>
+      <Container>
+        <Row>
+          <Col className="text-center py-3">
+            <p>Etshop &copy; {currentYear}</p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
+  );
+};
 
-
-    </Footer>
-  )
-}
-
-export default Footer
+export default Footer;
